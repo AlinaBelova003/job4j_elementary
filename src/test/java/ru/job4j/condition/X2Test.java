@@ -30,7 +30,7 @@ public class X2Test {
     }
 
     @Test
-    public void whenA0B1C1X1then() {
+    public void whenA0B1C1X1then2() {
         int a = 0;
         int b = 1;
         int c = 1;
@@ -41,7 +41,7 @@ public class X2Test {
     }
 
     @Test
-    public void whenA1B1C0X1then0() {
+    public void whenA1B1C0X1then2() {
         int a = 1;
         int b = 1;
         int c = 0;
@@ -53,7 +53,7 @@ public class X2Test {
     }
 
     @Test
-    public void whenA1B1C1X0() {
+    public void whenA1B1C1X0then1() {
         int a = 1;
         int b = 1;
         int c = 1;
@@ -62,9 +62,5 @@ public class X2Test {
         int res5 = X2.calk(a, b, c, x);
         Assert.assertEquals(expected, res5);
 
-    }
-
-    @Test
-    public void main() {
     }
 }
