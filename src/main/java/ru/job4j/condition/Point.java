@@ -12,5 +12,7 @@ public class Point {
         System.out.println();
         double result2 = Point.distance(4, 5, 8, 2);
         System.out.println("Результат кардинатов (8, 4) и (2, 5) " + result2);
+        double result3 = Point.distance(8, 5, 6, 4);
+        System.out.println("Результат кардинатов (8,6) и (5, 4) " + result3);
     }
 }
