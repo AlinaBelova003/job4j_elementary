@@ -3,11 +3,9 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class TrgAreaTest {
 
-    @Test
+     @Test
     public void whenP8A3B2dot5C2dot5Square3() {
         double a = 3;
         double b = 2.5;
@@ -19,7 +17,7 @@ public class TrgAreaTest {
         Assert.assertEquals(expected, out, exp);
     }
 
-    @Test
+     @Test
     public void whenP6K2Square2() {
         int expected = 2;
         int p = 6;
@@ -29,7 +27,7 @@ public class TrgAreaTest {
 
     }
 
-    @Test
+     @Test
     public void whenP7A5B4dot5C4dot5Square9dot354() {
         double a = 5;
         double b = 4.5;
