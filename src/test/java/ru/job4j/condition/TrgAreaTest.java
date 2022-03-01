@@ -30,7 +30,7 @@ public class TrgAreaTest {
     }
 
     @Test
-    public void whenP10A5B4dot5C4dot5() {
+    public void whenP7A5B4dot5C4dot5Square9dot354() {
         double a = 5;
         double b = 4.5;
         double c = 4.5;
