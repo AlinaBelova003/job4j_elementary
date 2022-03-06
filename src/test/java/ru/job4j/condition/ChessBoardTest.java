@@ -72,6 +72,7 @@ public class ChessBoardTest {
         int expected = 0;
         Assert.assertEquals(expected, result);
     }
+
     @Test
     public void whenY2isMinus1ThenWayIs0() {
         int x1 = 2;
