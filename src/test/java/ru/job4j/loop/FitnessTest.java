@@ -43,5 +43,4 @@ public class FitnessTest {
         int out = Fitness.calc(ivan, nik);
         Assert.assertEquals(expected, out);
     }
-
 }
