@@ -1,0 +1,18 @@
+package ru.job4j.arrey;
+
+public class FindLoop {
+    public static int indexOf(int[] data, int el) {
+        int result = -1;
+         for (int index = 0; index < data.length; index++) {
+             if (data[index] == el) {
+                 result = index;
+                 break;
+             }
+         }
+         return result;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
