@@ -7,10 +7,6 @@ public class Turn {
             array[index] = array[array.length - index - 1];
             array[array.length - index - 1] = temp;
         }
-
-        for (int i : array) {
-            System.out.println(i);
-        }
         return array;
 
     }
