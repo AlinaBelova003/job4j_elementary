@@ -23,8 +23,8 @@ public class MatrixCheckTest {
     public void whenHasNotMonoHorizontal() {
         char[][] input = {
                 {' ', ' ', ' '},
-                {' ', ' '},
-                {' ', ' '}
+                {'X', ' '},
+                {'X', ' '}
         };
         int row = 0;
         boolean result = MatrixCheck.monoHorizontal(input, row);
