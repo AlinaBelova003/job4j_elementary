@@ -36,13 +36,13 @@ public class MatrixCheckTest {
     @Test
     public void whenHasMonoVertical() {
         char[][] input = {
-                {' ', ' ', 'X'},
-                {' ', ' ', 'X'},
-                {' ', ' ', 'X'}
+                {'X', ' ', 'X'},
+                {' ', ' ', ' '},
+                {' ', ' ', ' '}
         };
         int column = 2;
         boolean result = MatrixCheck.monoVertical(input, column);
-        Assert.assertTrue(result);
+        Assert.assertFalse(result);
     }
 
     @Test
