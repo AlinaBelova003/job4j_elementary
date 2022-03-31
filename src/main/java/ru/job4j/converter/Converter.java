@@ -23,13 +23,11 @@ public class Converter {
         System.out.println("140 rubles are " + euro + " euro.");
         float dollar = Converter.rubelToDollars(90);
         System.out.println("90 rubel are " + dollar + " dollar.");
-
         float in = 140;
         float expected = 2;
         float out = Converter.rubelToEuro(in);
         boolean passed = expected == out;
         System.out.println("140 rubles are 2. Test result : " + passed);
-
         float in1 = 90;
         float expected1 = 1.5F;
         float out1 = Converter.rubelToDollars(in1);

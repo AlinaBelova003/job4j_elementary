@@ -7,7 +7,6 @@ public class SkipNegative {
             int val = array[row][cell];
             if (val < 0) {
                 array[row][cell] = 0;
-
             }
         }
     }
