@@ -9,7 +9,7 @@ public class PointTest {
     public void when00to20then2() {
         Point a = new Point(0, 0);
         Point b = new Point(0, 2);
-        double expected = 2;
+        double expected = 2.0;
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
 
@@ -19,7 +19,7 @@ public class PointTest {
     public void when45to82then13() {
         Point a = new Point(4, 5);
         Point b = new Point(2, 8);
-        double expected = 13;
+        double expected = 3.605551275463989;
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
@@ -28,7 +28,7 @@ public class PointTest {
     public void when85to64then3() {
        Point a = new Point(8, 5);
        Point b = new Point(6, 4);
-        double expected = 3;
+        double expected = 2.23606797749979;
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
