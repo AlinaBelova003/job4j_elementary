@@ -18,14 +18,14 @@ public class PointTest {
     @Test
     public void when45to82then13() {
         Point a = new Point(4, 5);
-        Point b = new Point(2, 8);
-        double expected = 3.605551275463989;
+        Point b = new Point(8, 2);
+        double expected = 5.0;
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when85to64then3() {
+    public void when85to64then2dot2360() {
        Point a = new Point(8, 5);
        Point b = new Point(6, 4);
         double expected = 2.23606797749979;
