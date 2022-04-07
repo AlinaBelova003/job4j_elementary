@@ -5,8 +5,12 @@ public class Max {
         return left > right ? left : right;
     }
 
-    public static void main(String[] args) {
-        int rs1 = Max.max(1, 2);
-        System.out.println(rs1);
+    public static int max(int left, int right, int third) {
+        return max(left, max(right, third));
     }
+
+    public static int max(int left, int right, int third, int four) {
+        return max(max(left, right), max(third, four));
+    }
+    
 }
