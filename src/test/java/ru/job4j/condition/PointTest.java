@@ -32,4 +32,15 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when5to4to2Then() {
+        Point a = new Point(5, 4);
+        Point b = new Point(4, 3);
+        Point c = new Point(6, 2);
+        double expected = 6.4031242374328485;
+        double out = a.distance3d(c);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
 }
