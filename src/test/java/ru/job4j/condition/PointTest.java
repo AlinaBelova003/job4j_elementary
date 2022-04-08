@@ -34,11 +34,11 @@ public class PointTest {
     }
 
     @Test
-    public void when5to4to2Then() {
+    public void when5to4to2Then6dot40() {
         Point a = new Point(5, 4);
         Point b = new Point(4, 3);
         Point c = new Point(6, 2);
-        double expected = 6.4031242374328485;
+        double expected = 6.40;
         double out = a.distance3d(c);
         Assert.assertEquals(expected, out, 0.01);
     }
