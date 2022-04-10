@@ -25,21 +25,20 @@ public class PointTest {
     }
 
     @Test
-    public void when85to64then2dot2360() {
-       Point a = new Point(8, 5);
-       Point b = new Point(6, 4);
-        double expected = 2.23606797749979;
+    public void when854to645then2dot23() {
+       Point a = new Point(8, 5, 4);
+       Point b = new Point(6, 4, 5);
+        double expected = 2.23;
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when5to4to2Then6dot40() {
-        Point a = new Point(5, 4);
-        Point b = new Point(4, 3);
-        Point c = new Point(6, 2);
-        double expected = 6.40;
-        double out = a.distance3d(c);
+    public void when543to430Then1dot73() {
+        Point a = new Point(5, 4, 3);
+        Point b = new Point(4, 3, 0);
+        double expected = 1.73;
+        double out = a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
