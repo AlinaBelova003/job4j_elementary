@@ -11,16 +11,18 @@ public class JavaNameValidator {
      * @param name входное имя
      */
     public static boolean isNameValid(String name) {
-        if (!name.isEmpty() && !Character.isUpperCase(name.charAt(0))) {
+        boolean rsl = !name.isEmpty() && !Character.isUpperCase(name.charAt(0)) && !Character.isDigit(name.codePointAt(0));
+        if (rsl) {
             for (int i = 1; i < name.length(); i++) {
             int code = name.codePointAt(i);
             if (isSpecialSymbol(code) || isUpperLatinLatter(code)
                     || isLowerLatinLatter(code) || !Character.isDigit(name.codePointAt(0))) {
-                return true;
+                rsl = true;
+                break;
             }
         }
         }
-        return false;
+        return rsl;
     }
 
     public static boolean isSpecialSymbol(int code) {
